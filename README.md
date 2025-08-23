@@ -8,7 +8,13 @@ Website created using Jekyll to build HTML and Markdown files and Bootstrap for 
 # Contents
 
 ## Homepage
-TODO: Homepage contents  
+(TODO: Homepage contents)
+
+## Resume
+(TODO: Resume contents)
+
+## Projects
+(TODO: Projects contents)
 
 ## TODO:
 -**Homepage**  
