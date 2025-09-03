@@ -1,7 +1,9 @@
 ---
 permalink: /404.html
 layout: page
+title: "404"
 ---
+<meta http-equiv="refresh" content="2;url={{ "/home/index.html" | relative_url }}">
 
 <style type="text/css" media="screen">
   .container {
@@ -21,5 +23,7 @@ layout: page
   <h1>404</h1>
 
   <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p>The requested page could not be found.</p><br>
+
+  <p>Redirecting in 2 seconds, if not click <a href="{{ "/home/index.html" | relative_url }}">HOME</a></p>
 </div>
