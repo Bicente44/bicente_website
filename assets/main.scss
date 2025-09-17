@@ -7,7 +7,24 @@
   --bg: black;
   --muted: gray;
   --accent: blue;
+  --nav-height: 56px;
 }
 /* Max width? */
 
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(0);
+  transition: transform 220ms ease;
+  z-index: 1030;
+  will-change: transform;
+}
+
+body {
+  padding-top: var(--nav-height, 56px);
+}
+
+#navbar:focus-within { transform: translateY(0); }
 
