@@ -1,14 +1,17 @@
-<nav class="navbar navbar-expand-lg bg-body-secondary shadow-sm">
-  <div class="container-fluid justify-content-center">
-    <!-- Home button -->
-    <a class="navbar-brand me-4" href="home.html">
-      Computer Engineering Student | Vincent Welbourne</a>
+<nav id="navbar" class="navbar navbar-expand-lg bg-body-secondary shadow-sm">
+	<div class="container-fluid justify-content-center">
+		
+		<a class="navbar-brand me-4" href="home.html">Vincent Welbourne | Computer Engineer</a>
 
-    <!-- Menu items -->
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/resume.html' | relative_url }}">Resume</a></li>
-      <li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/projects.html' | relative_url }}">Projects</a></li>
-      <li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/about.html' | relative_url }}">About Me</a></li>
-    </ul>
-  </div>
+		<!-- Menu items -->
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/home.html' | relative_url }}">Home</a></li>
+			<li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/resume.html' | relative_url }}">Resume</a></li>
+			<li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/projects.html' | relative_url }}">Projects</a></li>
+			<li class="nav-item"><a class="nav-link text-decoration-underline" href="{{ '/about.html' | relative_url }}">About Me</a></li>
+		</ul>
+	</div>
 </nav>
+
+<!-- Script for header drop and hide -->
+<script src="{{ '/assets/js/header_drop.js' | relative_url }}" defer></script>
