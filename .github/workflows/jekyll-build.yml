@@ -2,39 +2,49 @@ name: Build and deploy Jekyll site
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
+  id-token: write
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2
+          ruby-version: "3.1.7"
+          cache: bundler
 
-      - name: Install bundler and gems
+      - name: Install Bundler
+        run: gem install bundler -v 2.4.22
+
+      - name: Install dependencies
         run: |
-          gem install bundler
-          # ensure Bundler uses repo-local path (avoids trying to write to /home/vincent/...)
-          bundle config set path 'vendor/bundle'
-          bundle install --jobs 4 --retry 3
+          bundle _2.4.22_ config set --local path 'vendor/bundle'
+          bundle _2.4.22_ install --jobs 4 --retry 3
 
-      - name: Build the site
-        run: |
-          bundle exec jekyll build --destination ./_site
+      - name: Build site
+        run: bundle exec jekyll build --config _config.yml
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          path: ./_site
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
