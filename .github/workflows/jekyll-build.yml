@@ -3,7 +3,7 @@ name: Build and deploy Jekyll site
 on:
   push:
     branches:
-      - main   # change to 'master' if your default branch is master
+      - main
 
 permissions:
   contents: write
@@ -24,6 +24,8 @@ jobs:
       - name: Install bundler and gems
         run: |
           gem install bundler
+          # ensure Bundler uses repo-local path (avoids trying to write to /home/vincent/...)
+          bundle config set path 'vendor/bundle'
           bundle install --jobs 4 --retry 3
 
       - name: Build the site
