@@ -1,17 +1,22 @@
 ---
 layout: baseplate
 ---
-<div class="container-fluid" style="max-width:700px;">
-	<div class="text-center"> 
-		<br><h2 class="Intro">{{ page.Intro }}</h2>
-		<p class="AboutSummary">{{ page.AboutSummary }}</p>
-		
-		<p>If you would like to see my previous work</p>
-			<p>I recommend going to my <strong><a href="resume.html">Resume</a>
-			</strong> or my <strong><a href="https://github.com/Bicente44" target="_blank">GitHub</a>
-			</strong></p><br>
+<div class="container-fluid" style="max-width:700px; text-align: left;">
+	<div style="text-align: center;">
+		<div class="box">
+			<h1 class="Intro">{{ page.Intro }}</h2>
+			<p class="AboutSummary" >{{ page.AboutSummary }}</p>
 		</div>
+		<br><h1>Tools I work with,</h1>
+
+		{% include skills.html %} <br>
 		
-	<!-- {{ content }} -->
+		
+		
+		
+		
+		<p>If you would like to see some of my work</p>
+		<p>I recommend going to my <strong><a href="resume.html">Resume</a></strong>
+		or my <strong><a href="https://github.com/Bicente44" target="_blank">GitHub</a></strong></p><br>
 	</div>
 </div>
