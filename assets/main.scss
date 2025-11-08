@@ -3,7 +3,9 @@
 ---
 
 //@import navbar;
-@use "index" as *;
+//@use "index" as *;
+@import "navbar";
+@import "skills";
 
 :root {
   --bg: white;
