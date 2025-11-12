@@ -18,7 +18,7 @@
 
 body {
   padding-top: var(--nav-height, 56px);
-  background-color: #1b1b1b;
+  background-color: #212121;
   color: #ebebeb;
   margin-top: 4rem;
   font-family: var(--font-body);
@@ -32,4 +32,12 @@ body {
   color: white;
 }
 
-
+footer {
+  font-family: Georgia, serif;
+  background-color: #1b1b1b;
+  color: #ebebeb;
+  text-align: center;
+  padding: 10px; 
+  border: 1px solid #27272a;
+  color: white;
+}
