@@ -16,16 +16,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
-<body class="min-vh-100" style="padding-top: 1rem;">
+<body class="min-vh-100 d-flex flex-column" style="padding-top: 1rem;">
+
 	{% include header.html %}
 
-	<div class="container-fluid" style="max-width:850px;">
+	<div class="flex-fill container-fluid" style="max-width:850px;">
 		{{ content }}
 	</div>
 
-	{% if page.show_footer %}
 	{% include footer.html %}
-	{% endif %}
-
 </body>
 </html>
