@@ -3,7 +3,7 @@ layout: home
 title: "Home"
 permalink: /home.html
 Intro: "Vincent Welbourne"
-AboutSummary: "<p>A Computer Engineering Technology student who strives to learn</p> <p>about, create in and solve problems for our rapidly advancing field.</p>"
+AboutSummary: "I’m a Computer Engineering Technology student who loves learning, building solutions, and tackling challenges in our fast-moving field."
 ---
 
 Main Content Area for later

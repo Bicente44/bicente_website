@@ -5,6 +5,9 @@
 	if (!navbar) return;
 	
 	document.documentElement.style.setProperty('--nav-height', navbar.offsetHeight + 'px');
+    window.addEventListener('resize', function() {
+        document.documentElement.style.setProperty('--nav-height', navbar.offsetHeight + 'px');
+    });
 	
 	//Scroll position
 	let last = window.pageYOffset || 0;

@@ -1,0 +1,3 @@
+body {
+  padding-top: var(--nav-height, 60px); // fallback in case JS hasn't run yet
+}

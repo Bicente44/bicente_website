@@ -6,6 +6,7 @@
 //@use "index" as *;
 @import "navbar";
 @import "skills";
+@import "box";
 
 :root {
   --bg: white;
@@ -18,23 +19,15 @@
 
 body {
   padding-top: var(--nav-height, 56px);
-  background-color: #212121;
+  background-color: #2e2e2e;
   color: #ebebeb;
   margin-top: 4rem;
   font-family: var(--font-body);
 }
 
-.box {
-  padding: 20px;
-  border: 1px solid #27272a;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  color: white;
-}
-
 footer {
   font-family: Georgia, serif;
-  background-color: #1b1b1b;
+  background-color: #232323;
   color: #ebebeb;
   text-align: center;
   padding: 10px; 
