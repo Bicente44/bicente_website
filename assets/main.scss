@@ -7,9 +7,9 @@
 @import "navbar";
 @import "skills";
 @import "box";
+@import "resume";
 
 :root {
-  --bg: white;
   --bg: black;
   --muted: gray;
   --accent: blue;
@@ -21,7 +21,6 @@ body {
   padding-top: var(--nav-height, 56px);
   background-color: #2e2e2e;
   color: #ebebeb;
-  margin-top: 4rem;
   font-family: var(--font-body);
 }
 

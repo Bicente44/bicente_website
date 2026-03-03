@@ -1,0 +1,55 @@
+pdf: /assets/pdfs/Vincent_Welbourne_Resume_(25S).pdf
+
+experience:
+  - title: Associate
+    company: Hobby Hideaway
+    location: Ottawa ON
+    start: "2024-02"
+    end: "present"
+
+  - title: Detailer/Wrapper
+    company: Luxus Auto
+    location: Ottawa ON
+    start: "2024-01"
+    end: "2024-07"
+
+  - title: Landscaper
+    company: Mer Bleue Golf
+    location: Ottawa ON
+    start: "2021-08"
+    end: "2024-09"
+
+education:
+  - degree: Computer Engineering Technology
+    school: Algonquin College
+    location: Ottawa ON
+    start: "2024-08"
+    end: "2027-08"
+    credential: Advanced College Diploma
+  
+  - degree: High school
+    school: College Catholique Mer Bleue
+    location: Ottawa ON
+    start: "2018-09"
+    end: "2024-06"
+    credential: High school  Diploma
+
+languages:
+  - Java
+  - C / C++
+  - PHP
+  - R
+  - Lua / Luau
+  - HTML / CSS
+  - JavaScript
+  - Sass
+  - SQL
+
+tools:
+  - Git
+  - Linux
+  - Bash / Shell
+  - MySQL
+  - Bootstrap
+  - AngularJS
+  - Jekyll

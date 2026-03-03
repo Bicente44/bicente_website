@@ -1,0 +1,223 @@
+// Resume Page
+.resume-top,
+.resume-bottom {
+  text-align: center;
+  padding: 2rem 0 1.5rem;
+
+  p {
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 0.55rem 1.6rem;
+  border: 1px solid #3f8cbf;
+  border-radius: 4px;
+  color: #3f8cbf;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: #3f8cbf;
+    color: #fff;
+  }
+}
+
+// Timeline Wrapper
+.timeline {
+  position: relative;
+  width: 100%;
+  min-height: 900px;
+}
+
+// Spine
+.timeline-spine {
+  position: absolute;
+  left: 62.4%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #3f8cbf 3%,
+    #3f8cbf 97%,
+    transparent
+  );
+  box-shadow: 0 0 8px rgba(63, 140, 191, 0.4);
+  z-index: 0;
+}
+
+// Year Markers
+.timeline-year {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding-left: 25%;
+  z-index: 2;
+
+  span {
+    background-color: #2e2e2e;
+    color: #3f8cbf;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    padding: 0.15rem 0.6rem;
+    border: 1px solid #3f8cbf;
+    border-radius: 20px;
+    z-index: 2;
+  }
+}
+
+// Columns
+.timeline-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(65% - 2rem);
+}
+
+.timeline-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: calc(35% - 2rem);
+}
+
+// Cards
+.timeline-card {
+  position: absolute;
+  width: 100%;
+  max-width: 240px;
+  box-sizing: border-box;
+overflow: hidden;
+  background-color: #232323;
+  border: 1px solid #27272a;
+  border-left: 3px solid #3f8cbf;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:hover {
+    border-color: #3f8cbf;
+    box-shadow: 0 0 16px rgba(63, 140, 191, 0.2);
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    margin: 0 0 0.25rem;
+    color: #ebebeb;
+  }
+
+  .card-company {
+    font-size: 0.8rem;
+    color: #3f8cbf;
+    margin: 0 0 0.25rem;
+  }
+
+  .card-dates {
+    font-size: 0.72rem;
+    color: #888;
+    margin: 0;
+  }
+}
+
+.timeline-left .timeline-card {
+  right: 0;
+  left: auto;
+}
+
+.timeline-right .timeline-card {
+  left: 0;
+  right: auto;
+}
+
+// Animation
+.timeline-left .timeline-card {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-right .timeline-card {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-card.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+// Stack
+.resume-tags-section {
+  margin: 2.5rem 0;
+
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: #ebebeb;
+    letter-spacing: 0.05em;
+  }
+}
+
+.resume-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume-tag {
+  background-color: #232323;
+  border: 1px solid #3f8cbf;
+  border-radius: 4px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  color: #ebebeb;
+}
+
+// Mobile
+@media (max-width: 819px) {
+  .timeline {
+    height: auto !important;
+    min-height: unset;
+    padding: 1rem 0;
+  }
+
+  .timeline-spine,
+  .timeline-year,
+  .timeline-dot {
+    display: none;
+  }
+
+  .timeline-left,
+  .timeline-right {
+    position: relative;
+    width: 100%;
+    height: auto !important;
+    padding: 0;
+  }
+
+  .timeline-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

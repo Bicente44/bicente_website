@@ -1,39 +1,69 @@
 ---
 layout: baseplate
 ---
-<div>
-	<div class="text-center">
-		<br><p>This is the resume contents (Work in progress)</p>
 
-		<p class="Intro">{{ page.Intro }}</p>
-	</div>
-
-	<!-- Navbar for colum soft/hard skills and column timeline tree -->
-	<nav class="navbar">
-		<div class="row w-100">
-			<!-- Here ill put the |Skills|Tree| just a placeholder for now -->
-			<div class="col-12 col-md-6 text-center bg-success">
-				<h1>SKILLS</h1>
-			</div>
-
-			<div class="col-12 col-md-6 text-center bg-primary">
-				<h1>TIMELINE</h1>
-			</div>
-
-
-		</div>
-	</nav>
-	<br>
-	<div class="text-center">
-		<h2>My Tech Stack<h2>
-
-
-
-	</div>
-	
-	
-	
-	
+<div class="resume-top">
+  <p>Scroll through my experience, or open the full PDF.</p>
+  <a href="{{ site.data.resume.pdf | relative_url }}" target="_blank" class="resume-btn">Open Resume PDF</a>
 </div>
 
+<div class="timeline">
+  <div class="timeline-spine"></div>
 
+  <div class="timeline-year" data-year="present"><span>Present</span></div>
+  <div class="timeline-year" data-year="2024"><span>2024</span></div>
+  <div class="timeline-year" data-year="2023"><span>2023</span></div>
+  <div class="timeline-year" data-year="2022"><span>2022</span></div>
+  <div class="timeline-year" data-year="2021"><span>2021</span></div>
+
+  <!-- Left column: Work Experience -->
+  <div class="timeline-left">
+    {% for entry in site.data.resume.experience %}
+    <div class="timeline-card"
+         data-start="{{ entry.start }}"
+         data-end="{{ entry.end }}">
+      <h3>{{ entry.title }}</h3>
+      <p class="card-company">{{ entry.company }}</p>
+      <p class="card-dates"></p>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Right column: Education -->
+  <div class="timeline-right">
+    {% for entry in site.data.resume.education %}
+    <div class="timeline-card"
+         data-start="{{ entry.start }}"
+         data-end="{{ entry.end }}">
+      <h3>{{ entry.degree }}</h3>
+      <p class="card-company">{{ entry.school }}</p>
+      <p class="card-dates"></p>
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+
+<!-- Tech Stack -->
+<div class="resume-tags-section">
+  <h2>Languages</h2>
+  <div class="resume-tags">
+    {% for item in site.data.resume.languages %}
+    <span class="resume-tag">{{ item }}</span>
+    {% endfor %}
+  </div>
+
+  <h2>Tools</h2>
+  <div class="resume-tags">
+    {% for item in site.data.resume.tools %}
+    <span class="resume-tag">{{ item }}</span>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="resume-bottom">
+  <p>Want the full picture?</p>
+  <a href="{{ site.data.resume.pdf | relative_url }}" target="_blank" class="resume-btn">Open Resume PDF</a>
+</div>
+
+<script src="{{ '/assets/js/timeline.js' | relative_url }}" defer></script>
