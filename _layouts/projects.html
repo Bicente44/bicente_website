@@ -1,0 +1,28 @@
+---
+layout: baseplate
+---
+
+<br><div class="projects-top text-center box">
+    <h2>{{ page.Intro }}</h2>
+    <p>{{ page.IntroSummary }}<p>
+</div>
+
+<div class="projects-grid">
+  {% for project in site.data.projects.project %}
+  <a class="project-card" href="{{ project.repolink }}" target="_blank">
+    <div class="project-image">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+    </div>
+    <div class="project-info">
+      <h3>{{ project.title }}</h3>
+      <p class="project-description">{{ project.description }}</p>
+      <div class="project-tags">
+        {% assign tags = project.techstack | split: ", " %}
+        {% for tag in tags %}
+        <span class="project-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

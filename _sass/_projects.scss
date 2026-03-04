@@ -1,0 +1,91 @@
+// Projects Page
+.projects-top {
+  margin-bottom: 2rem;
+}
+
+// Grid
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Card
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #232323;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+
+  &:hover {
+    border-color: #3f8cbf;
+    box-shadow: 0 0 20px rgba(63, 140, 191, 0.15);
+    transform: translateY(-4px);
+  }
+}
+
+// Image
+.project-image {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.04);
+}
+
+//Info
+.project-info {
+  padding: 1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  h3 {
+    font-size: 1rem;
+    color: #ebebeb;
+    margin: 0;
+  }
+}
+
+.project-description {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0;
+}
+
+// Tags
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.project-tag {
+  background-color: #2a2a2a;
+  border: 1px solid #3f8cbf;
+  border-radius: 4px;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  color: #ebebeb;
+}

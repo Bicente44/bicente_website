@@ -1,0 +1,12 @@
+project:
+  - title: vin - Text Editor
+    description: A custom text editor built in C with a focus on simplicity and efficiency.
+    techstack: C, Makefile
+    repolink: https://github.com/Bicente44/vin
+    image: /assets/projects/vin_text_editor.png
+
+  - title: Portfolio Website
+    description: Bicente's website created with Jekyll
+    techstack: HTML, SCSS, JavaScript, Jekyll
+    repolink: https://github.com/Bicente44/bicente_website
+    image: /assets/projects/website_portfolio.jpg
