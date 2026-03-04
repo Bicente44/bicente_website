@@ -18,12 +18,10 @@ Website created using Jekyll to build HTML and Markdown files, and using Bootstr
 - A little bit of my story and goals
 
 ## TODO:
-- [ ] Implement projects page
-- [ ] Fix link to not show "/home.html" just '/home/' to each page
+- [x] Implement projects page
+- [x] Fix link to not show "/home.html" just '/home' to each page
 - [ ] Add these skills (svgrepo): R, C++.
 - [ ] Improve home page (add boxes more information)
-- [x] Make a footer stuck at the bottom of the page not screen
-- [x] Split scss files into their own navbar, main, skills etc...
 
 ## Ideas (in the works might not stay)
 - [ ] Language button (en-fra)
