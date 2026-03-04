@@ -1,5 +1,5 @@
 ---
 layout: about
-title: "Resume"
+title: "About"
 permalink: /about.html
 ---

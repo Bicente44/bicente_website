@@ -28,5 +28,6 @@ Website created using Jekyll to build HTML and Markdown files, and using Bootstr
 ## Ideas (in the works might not stay)
 - [ ] Language button (en-fra)
 - [ ] Make the skills section in resume more job oriented like soft and hard skills ?
+- [ ] Add a box on top of the resume experience tree (match the other pages with a text box at top)
 - [ ] Make the landing intro "vincent welbourne" a click dropdown of my about me or a summary of it
 - [ ] Add on click event on tech logos to randomly show easter egg
