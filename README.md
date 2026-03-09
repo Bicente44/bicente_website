@@ -20,12 +20,13 @@ Website created using Jekyll to build HTML and Markdown files, and using Bootstr
 ## TODO:
 - [x] Implement projects page
 - [x] Fix link to not show "/home.html" just '/home' to each page
-- [ ] Add these skills (svgrepo): R, C++.
+- [x] Add these skills (svgrepo): R, C++.
 - [ ] Improve home page (add boxes more information)
+- [ ] Fix mobile skill display being pushed to right in home
+- [ ] Make the skills section in resume more job oriented like soft and hard skills ?
 
 ## Ideas (in the works might not stay)
 - [ ] Language button (en-fra)
-- [ ] Make the skills section in resume more job oriented like soft and hard skills ?
 - [ ] Add a box on top of the resume experience tree (match the other pages with a text box at top)
 - [ ] Make the landing intro "vincent welbourne" a click dropdown of my about me or a summary of it
 - [ ] Add on click event on tech logos to randomly show easter egg
