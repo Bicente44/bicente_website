@@ -10,3 +10,22 @@ project:
     techstack: HTML, SCSS, JavaScript, Jekyll
     repolink: https://github.com/Bicente44/bicente_website
     image: /assets/projects/website_portfolio.jpg
+
+  - title: quiz_game
+    description: A simple quiz game in C
+    techstack: C, SQLite
+    repolink: https://github.com/Bicente44/quiz_game
+    image: /assets/projects/quiz_game.jpg
+
+  - title: keylogger
+    description: A keylogger to capture input made from a keyboard. Inspired by Daniel Hirsch
+    techstack: C
+    repolink: https://github.com/Bicente44/keylogger
+    image: /assets/projects/
+
+  - title: blackjack_vw
+    description: Vincent's interpretation of BlackJack made in Java (To Be Finished)
+    techstack: Java
+    repolink: https://github.com/Bicente44/blackjack_vw
+    image: /assets/projects/blackjack_vw.jpg
+

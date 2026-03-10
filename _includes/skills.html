@@ -1,6 +1,6 @@
 <!-- _includes/skills.html -->
 
-<ul class="skills-grid">
+<ul class="skill-grid">
 	{% for skill in site.data.skills %}
 	<li class="skill-card" aria-label="{{ skill.name }}">
 		<img src="{{ '/assets/images/skills/' | append: skill.file | relative_url }}" alt="{{ skill.name }} logo" class="skill-icon" loading="lazy">

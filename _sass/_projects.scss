@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   background-color: #232323;
-  border: 1px solid #27272a;
+  border: 1px solid #3f8cbf;
   border-radius: 8px;
   overflow: hidden;
   text-decoration: none;
@@ -28,7 +28,7 @@
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 
   &:hover {
-    border-color: #3f8cbf;
+    border-color: #3f4ebf;
     box-shadow: 0 0 20px rgba(63, 140, 191, 0.15);
     transform: translateY(-4px);
   }

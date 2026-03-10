@@ -3,6 +3,8 @@
   file: java-svgrepo-com.svg
 - name: C
   file: c-svgrepo-com.svg
+- name: C++
+  file: c-plus-plus-svgrepo-com.svg
 - name: Lua
   file: lua02-svgrepo-com.svg
 - name: PostgreSQL
@@ -19,6 +21,8 @@
   file: java-script-svgrepo-com.svg
 - name: PHP
   file: php01-svgrepo-com.svg
+- name: R
+  file: r-project-svgrepo-com.svg
 - name: Bootstrap
   file: bootstrap-fill-svgrepo-com.svg
 - name: AngularJS

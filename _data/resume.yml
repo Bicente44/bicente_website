@@ -53,3 +53,9 @@ tools:
   - Bootstrap
   - AngularJS
   - Jekyll
+
+softskills:
+  - this
+
+hardskills:
+  - that
