@@ -6,3 +6,5 @@ vendor
 .bundle/config
 .bundle/config
 /vendor/bundle
+Gemfile
+Gemfile.lock

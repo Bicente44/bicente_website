@@ -1,7 +1,7 @@
 # Gemfile
 source "https://rubygems.org"
 
-ruby "3.1.7"
+ruby "3.2.3"
 
 gem "jekyll", "4.2.2"
 gem "sassc"

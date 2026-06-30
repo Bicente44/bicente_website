@@ -5,6 +5,8 @@
   file: c-svgrepo-com.svg
 - name: C++
   file: c-plus-plus-svgrepo-com.svg
+- name: GoLang
+  file: go-svgrepo-com.svg
 - name: Lua
   file: lua02-svgrepo-com.svg
 - name: PostgreSQL
@@ -27,8 +29,6 @@
   file: bootstrap-fill-svgrepo-com.svg
 - name: AngularJS
   file: angularjs-svgrepo-com.svg
-- name: Networking
-  file: networking-marketing-svgrepo-com.svg
 - name: Git
   file: git-svgrepo-com.svg
 - name: GitHub
@@ -39,3 +39,7 @@
   file: linux-svgrepo-com.svg
 - name: Bash
   file: terminal-bash-svgrepo-com.svg
+- name: Google Cloud
+  file: google-cloud-svgrepo-com.svg
+- name: Cloudflare
+  file: cloudflare-svgrepo-com.svg
