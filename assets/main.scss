@@ -25,6 +25,16 @@ body {
   font-family: var(--font-body);
 }
 
+.container-fluid a {
+  color: #ebebeb;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: #3f8cbf;
+  }
+}
+
 footer {
   font-family: Georgia, serif;
   background-color: #232323;
