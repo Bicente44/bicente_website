@@ -7,12 +7,16 @@
   file: c-plus-plus-svgrepo-com.svg
 - name: GoLang
   file: go-svgrepo-com.svg
+- name: Kotlin
+  file: kotlin-svgrepo-com.svg
 - name: Lua
   file: lua02-svgrepo-com.svg
 - name: PostgreSQL
   file: pgsql-svgrepo-com.svg
 - name: SQL
   file: sql-svgrepo-com.svg
+- name: R
+  file: r-project-svgrepo-com.svg
 - name: HTML5
   file: html5-01-svgrepo-com.svg
 - name: CSS3
@@ -23,8 +27,6 @@
   file: java-script-svgrepo-com.svg
 - name: PHP
   file: php01-svgrepo-com.svg
-- name: R
-  file: r-project-svgrepo-com.svg
 - name: Bootstrap
   file: bootstrap-fill-svgrepo-com.svg
 - name: AngularJS

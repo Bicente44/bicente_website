@@ -29,15 +29,22 @@ project:
     repolink: https://github.com/Bicente44/blackjack_vw
     image: /assets/projects/blackjack_vw.jpg
 
+  - title: Chainboard (ALGOHACKATHON-Spark2026)
+    description: Decentralized Social Media Platform on the Etherium BloackChain (Sepolia test branch). 
+    techstack: Solidity, JavaScript, Ethers.js, Tailwind.css
+    repolink: https://jaminleod.com/chainboard/
+    image: /assets/projects/chainboard.png
+
   - title: BictoChat
     description: In memory of the Pictochat on the DS, online serverless draw chatroom web site
     techstack: GoLang, JavaScript, HTML, Google Cloud functions
     repolink: https://github.com/Bicente44/bictochat
     image: /assets/projects/bictochat.png
 
-  - title: Chainboard (ALGOHACKATHON-Spark2026)
-    description: Decentralized Social Media Platform on the Etherium BloackChain (Sepolia test branch). 
-    techstack: Solidity, JavaScript, Ethers.js, Tailwind.css
-    repolink: https://jaminleod.com/chainboard/
-    image: /assets/projects/chainboard.png
+  - title: Simba app
+    description: A tamagotchi Simba app, where you take care of a virtual Simba
+    techstack: Kotlin, Jetpack Compose, Multiplatform Settings
+    repolink: https://github.com/Bicente44/simba
+    image: /assets/projects/simba_app.jpg
+
 
