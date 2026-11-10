@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: "Projects"
-permalink: /projects
+permalink: /projects/
 Intro: "Welcome to my projects"
 IntroSummary: "I truly believe in open-source contribution, as it not only lets me share my hard work
 and ideas, but also allows people to learn and gain inspiration, even if my execution is 
