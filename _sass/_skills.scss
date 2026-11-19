@@ -1,9 +1,11 @@
 .skill-icon {
+  filter: brightness(0) invert(1);
   width: 65px;
   height: 65px;
   object-fit: contain;
   transition: transform .28s, filter .28s;
   pointer-events: none;
+  user-select: none;
 }
 
 .skill-grid {
@@ -23,6 +25,5 @@
 
 .skill-card:hover .skill-icon {
   transform: translateY(-6px) scale(1.06);
-  filter: drop-shadow(0 12px 24px rgba(0,0,0,0.45)) saturate(1.15) hue-rotate(15deg);
 }
 
