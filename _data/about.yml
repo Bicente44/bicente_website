@@ -1,8 +1,10 @@
 aboutme: |
-  I'm Vincent Welbourne, a Computer Engineering Technology - Computing Science student, I love to take on challenges and learn all sorts of unique topics.
+  <h2 class="text-center">About me</h2>
 
-  I've studied areas ranging from data structures and operating systems to databases, while gaining experience with languages such as Java, C and C++ alongside Web languages and database fundamentals. These have given me a strong foundation to tackle any problems and build my own creations.
+  I'm Vincent Welbourne, a Computer Engineering Technology - Computing Science student, I love to create and work on my projects.
 
-  I want to focus on learning how to create better things. My goal is to be free to create things that are actually meaningful and impactful to myself and those around me. I'm a big believer in open-source which is why you'll find me posting almost any project of mine (those where I'm permitted to at least) on GitHub. I will make an effort to keep my portfolio and resume up to date. If you want to check that out, make sure to click either the project or resume button in the header!
+  I've studied areas ranging from data structures and operating systems to databases, while gaining experience with languages such as Java, Kotlin, C, C++, C# and Go alongside Web languages and database fundamentals. These have given me a strong foundation to tackle any problems and build my own creations.
+
+  I want to focus on learning how to create better things. My goal is to be free to create things that are actually meaningful and impactful to myself and those around me. I'm a big believer in open-source which is why you'll find me pushing just about every project of mine (those where I'm permitted to at least) on GitHub. I will make an effort to keep my portfolio and resume up to date. If you want to check that out, make sure to click either the project or resume button in the header!
 
   Thank you for reading! Please enjoy my website :)

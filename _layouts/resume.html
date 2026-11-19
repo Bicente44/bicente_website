@@ -1,9 +1,10 @@
 ---
 layout: baseplate
 ---
-
-<div class="resume-top">
-  <p>Scroll through my experience, or open the full PDF.</p>
+<br>
+<div class="box text-center" style="padding-bottom: 20px;">
+  <h2>My experience</h2>
+  <p>Below you'll find my work experience and skills. Scroll through my experience, or open the PDF for more detailed information.</p>
   <a href="{{ site.data.resume.pdf | relative_url }}" target="_blank" class="resume-btn">Open Resume PDF</a>
 </div>
 
@@ -46,24 +47,19 @@ layout: baseplate
 
 <!-- Tech Stack -->
 <div class="resume-tags-section">
-  <h2>Languages</h2>
+  <h2>Soft Skills</h2>
   <div class="resume-tags">
-    {% for item in site.data.resume.languages %}
+    {% for item in site.data.resume.softskills %}
     <span class="resume-tag">{{ item }}</span>
     {% endfor %}
   </div>
 
-  <h2>Tools</h2>
+  <h2>Hard Skills</h2>
   <div class="resume-tags">
-    {% for item in site.data.resume.tools %}
+    {% for item in site.data.resume.hardskills %}
     <span class="resume-tag">{{ item }}</span>
     {% endfor %}
   </div>
-</div>
-
-<div class="resume-bottom">
-  <p>Want the full picture?</p>
-  <a href="{{ site.data.resume.pdf | relative_url }}" target="_blank" class="resume-btn">Open Resume PDF</a>
 </div>
 
 <script src="{{ '/assets/js/timeline.js' | relative_url }}" defer></script>

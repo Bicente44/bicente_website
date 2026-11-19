@@ -1,3 +1,19 @@
-body {
-  padding-top: var(--nav-height, 60px); // fallback in case JS hasn't run yet
+.header-hover {
+  display: inline-grid;
+}
+
+// Both spans share one grid cell, so the box is as wide as "Vincent Welbourne"
+.header-hover > span {
+  grid-area: 1 / 1;
+  text-align: center;
+}
+
+.header-onhover {
+  visibility: hidden;
+}
+
+.header-hover:hover,
+.header-hover:focus {
+  .header-default { visibility: hidden; }
+  .header-onhover { visibility: visible; }
 }
